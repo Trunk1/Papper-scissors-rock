@@ -1,0 +1,103 @@
+body{
+    /* background-color:rgba(27, 27, 50, 0.8); */
+    background-image: linear-gradient(
+      45deg,
+      rgba(129, 129, 184, 0.8),
+      rgba(100, 100, 235, 0.7)
+    ),
+    url(/logo/7c3fe08b9912b61cc82acfb7439c1dc0_ce_1600x853x0x24.jpg);
+    background-repeat:repeat, no-repeat;
+    background-size:130%;;
+}
+
+
+.fieldAll {
+    border: 3px solid ;
+    background-color: rgb(172, 202, 200);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "Comp Result"
+      "My Result";
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    margin-top: 200px;
+    /* border-radius: 30px; */
+}
+
+.opponentField {
+    border: 3px solid;
+    grid-area: Comp;
+    background-color: rgb(21, 126, 126);
+    text-align: center; 
+    line-height:9.5;
+    /* border-radius: 30px; */
+    border-bottom-right-radius:15px;
+   
+}
+
+.myField {
+    position: relative;
+    border: 3px solid;
+    grid-area: My;
+    background-color:rgb(54, 153, 170);
+    text-align: center; 
+    line-height:10;
+    /* border-radius: 30px; */
+     border-top-right-radius:15px
+}
+
+.myField_text{
+    position: absolute; 
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+ 
+}
+
+
+
+
+.result{
+    border: 3px solid;
+    grid-area: Result;
+    background-color: white;
+    text-align: center; 
+    line-height:23;
+    /* border-radius: 30px; */
+    
+}
+
+.chooseButton{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    justify-content: space-around;
+    padding: 15px;
+    
+}
+
+
+.button {
+    background-color: #3388af; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: black;
+}
